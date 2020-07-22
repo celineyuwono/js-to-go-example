@@ -37,3 +37,8 @@ Same code from Javascript to Go. The code replaces variables inside curly braces
 }
 
 ```
+#### Example Output
+```
+Command: echo test poolll
+Command: echo hello
+```
