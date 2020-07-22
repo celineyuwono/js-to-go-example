@@ -1,5 +1,5 @@
 # js-to-go-example
-Same code from Javascript to Go.
+Same code from Javascript to Go. The code replaces variables inside curly braces with environmental variables.
 
 ### For go file, send POST request to localhost:3001 containing body:
 ```
