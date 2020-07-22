@@ -53,7 +53,7 @@ func format(commands Commands) {
 		for _, i := range out {
 			command.Command = strings.Replace(command.Command, i[0], env[i[1]], -1)
 		}
-		fmt.Println(command.Command)
+		fmt.Println("Command: ", command.Command)
 	}
 }
 
