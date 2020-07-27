@@ -43,6 +43,10 @@ func handler(w http.ResponseWriter, r *http.Request) {
 
 func format(commands Commands) {
 	for _, command := range commands.Commands {
+		// Other method
+		// for _, envVar := range command.EnvironmentVariables {
+		// 	command.Command = strings.Replace(command.Command, "{"+envVar.Name+"}", fmt.Sprintf("%v", envVar.Value), -1)
+		// }
 		env := map[string]string{}
 		for _, envVar := range command.EnvironmentVariables {
 			env[envVar.Name] = envVar.Value
